@@ -1,0 +1,138 @@
+26 ago 2002
+Version 2.8.2
+
+FractalForge was born the day I had to print several fractal images and some simple posters with an early Epson Stylus color printer. Back then, I realized there was no true color fractal generator for MS-Windows in the shareware market, so I decided to program one myself. I called it UbiMandel (after my name), and I wrote it in Visual Basic 3. I did not optimize the first version's algorithm because I didn't need to. Once I bought Delphi, I wondered what simple program I could do to learn it. So I began to code TrueMandel, another fractal program. I started it in May 1995 and finished it next October. I released it on the Internet as TrueMandel 1.0 (trmand10.zip), which stands for True Color Mandelbrot Set Generator.
+Later, I decided to migrate to the win32-bit world (NT and 95-98) using Delphi 2. Soon, there were two shareware versions: 1.5 and 1.6. In 1999, I completely rewrote TrueMandel in Delphi 4, and changed its name to FractalForge because there are several programs with similar names already available.
+Since version 2.4 I decided to make FractalForge open source, so now the project is hosted by FractalForge:
+http://sourceforge.net/projects/fractalforge
+
+Improvements over FractalForge 2.8.1:
+Fixed BoundedMP algo.
+Added Multi CPU alert.
+Split Image Tab in Color and Size for clarity.
+Improved Color Cycling speed.
+
+Improvements over FractalForge 2.8.0:
+Fix moving with zooming in animator.
+Added DoubleTail formula.
+Added Iterations to animator form.
+Added Play avi in animator form.
+Added Delete bmp in animator form.
+Added Choose multiple codecs in animator form.
+Added Average Filter (useful in zooming).
+Minor Bugfixes.
+
+Improvements over FractalForge 2.7.2:
+Added seven new formulas.
+New JuliaHere menu choice right-clicking on the image.
+Auto-start a new fractal when changing combo params.
+When History tab-page is selected the Start button restore history's fractal.
+Unlimited undo (Ctrl-Z).
+Animation works with Julia too.
+Julia floating uses current formula.
+Now zoom in and out work during the drawing.
+Added some faqs.
+Minor Bugfixes.
+
+Improvements over FractalForge 2.7.1:
+New faq file.
+New help file.
+Fixed a nasty bug with Equalize Colors.
+Fixed a bug opening help file.
+Improved Edge and Bumper filters.
+Minor Bugfixes.
+
+Improvements over FractalForge 2.7.0:
+Fixed a bug in import MAP filter.
+Add two Paste Params buttons in animator dialog.
+
+Improvements over FractalForge 2.6 final:
+At start FractalForge automatically registers file extension mnd.
+Let user choose a different avi codec if avi creation fails.
+Add select directory in avi dialog.
+Image|Fractal Info shows the max value under maximum iter.
+The offset trackbar is more responsive.
+Renamed some menus, added some shortcuts.
+Fixed a bug in colors of floating Julia.
+Minor Bugfixes.
+
+Improvements over FractalForge 2.6 prerelease:
+Lots of bugfixes.
+More responsiveness during long fractals (iter > 1M).
+Pressing Enter in Comments field doesn't start another fractal.
+Show percent in application caption.
+Orbits in shades (black to white) with mandel in background.
+Orbits window shows up to 10000 values.
+Press Esc to stop drawing of current fractals.
+Finished translating source.
+Fixed some flickering around.
+Added two new filters.
+Filters are applied after calculating.
+Opening of old files.
+Recompiled under Delphi 6.
+Removed forge background for flickering.
+Removed htmlhelp.ocx references for some incompatibility.
+Added File|New choice, same that Fractal|Start
+
+Improvements over FractalForge 2.4 beta4:
+Added a feature to transform bmps in a single avi.
+Added tools menu.
+Moved Poster composition to tools menu.
+Added animator tool for making bmps for animations.
+Added a feature to copy coordinates to clipboard.
+Fixed a bug when it cannot save inifile.
+Fixed a bug with elapsed time.
+
+Improvements over FractalForge 2.3:
+Added JPG saving capability.
+Changed "iteractions" with "iterations".
+Changed "Iter" with "Value" on bottom right corner. It shows current value (f.e. potential if you choosen it) of image point not always Iteration.
+Upgraded to Delphi5.
+Added Julia Floating window.
+Fixed a bug in Poster Options when the images are not square.
+Fixed a bug in Orbits Algo.
+
+Improvements over FractalForge 2.2:
+Added new Full Screen mode  (Option menu)
+Added a new colors (Nature)
+Added a new image (Elephant)
+Fixed a bug in replacing a file color
+Caption bar displays current fractal name
+Added Author and Image informations in PNGs
+It's now possible to drag a file onto Fractal Forge to render it immediately
+Added a image format ( 500 x 500 )
+Fixed some bugs in History List
+Added State and Version in History List. Crono and Time are now separated
+Fixed a major bug in Load/Save Lists
+Allow to quit when drawing a fractal
+Correct progress bar position during Bounds drawing
+It's possible to reset Starting Values (pressing cancel button)
+A few a minor bugs fixed
+
+Improvements over TrueMandel 1.6:
+Color Editing
+Improved and faster algorithms
+Better user interface
+Simpler and more powerful zooms
+Improved printing
+Poster images
+Filters
+Png Support
+Exe packed
+Improved Starting fractal dialog
+A lot of minor bugs fixed
+
+Improvements over TrueMandel 1.5
+32 bit optimized code
+80 bit precision (21 digits)
+Max iterations over 2*10^9
+Win95 components support
+Win95 long file name support
+Percent of drawing showed on title (also when minimized)
+Info on toolbox about the point you are on
+Preview color spectrum and current image
+New faster image display
+New draft mode (no second pass)
+Faster 'None' optimization (but still exact)
+New moveable rectangular zoom
+More bugs fixes

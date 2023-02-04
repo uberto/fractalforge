@@ -1,0 +1,4 @@
+Simply unzip all the files into a new directory. I hate installation routines, so I avoid them as much as possible.
+Fractal Forge will associate itself with extensions (*.mnd, *.mnl) automatically at first run. Then, you will be able to start Fractal Forge simply by double clicking on a fractal file.
+To uninstall, simply delete Fractal Forge's directory (and subdirectories). For a complete uninstall you can delete his keys from Registry: just search for FractalForge in keys and values, there are 4 entries only. If you don't how do it, don't worry, there is not problem to leave it there. 
+Fractal Forge does not add anything to the Windows or System directory. 

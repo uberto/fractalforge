@@ -1,0 +1,41 @@
+Frequentely Asked Questions
+
+Q: Can I mail to uberto@ubiland.net for a problem?
+A: Yes, of course. Just remember to include FractalForge in the subject. Sometimes my spam filter discards emails from unknown people. Many features of FF came from user's ideas and suggestions.
+
+Q: Sometimes, at very deep zooms, the image goes pixely. Is it a bug?
+A: No, you have reached the maximum precision of extended numbers, about 10^-18.
+
+Q: When I close FF it says "Problems with inifile..."
+A: The file FractalForge.ini is readonly or locked by another application. Probably you have copied the files from a cd. To fix it, right click on the file from Explorer and select Properties from menu.
+
+Q: When I try to start FF it says "The dynamic link library lpng.dll..."
+A: You're missing the file lpng.dll. You have to expand all the files in the zip into a directory before launching FF.
+
+Q: Changing both magnification and coords in animator give me weird results.
+A: This is a problem very tough to fix. It's not really a bug but FF calculates x-y coords of intermediate frames with a fixed step.
+For example passing in 3 steps from (1,3) to (2,5) determines the intermediate equals to (1.5, 4).
+This is fine if magnification keeps costant but if it changes then you'll notice a very low speed in first steps and then an accelleration at end (or viceversa).
+I could not find a smarter approach, any help is welcome.
+Fixed in version 2.8.1 tell me if there are still problems.
+
+Q: I had a program like FF that could cycle the colours. FF can do it?
+A: Yes, FF can cycle colors using the VCR buttons in Color Tab. It is a bit slow (expecially if you have chosen Potential color by) because it has millions of colors and not only 256 like older fractal programs. Note that choosing "Iterations" in color by improve cycling speed.
+
+Q: I found it but it is very slow. Can i make images in 256 colors?
+A: No, I'm sorry but FF is born to show 24 bits images. There are other programs that can to do that.
+
+Q: In the History grid a lot of zero-interest images tend to obscure the one or more that you might really want to return to. How can I find those?
+A: When you see a good image just change the title field and it'll be stored in History with the new name, so it'll be easier to retrive later. Then you can redraw it with Restore button.
+
+Q: Can I display a Julia window showing the entire Julia Set at wherever the pointer is located in the Mandelbrot window?
+A: Yes, Just right click on the image and select floating Julia.
+
+Q: Ok, but I found a beatiful Julia how can I draw it? If I move the mouse I lost the coordinates.
+A: Right click on the image and select JuliaHere. If you want to change some other parameter instead, click on CenterHere, fix the params and click on Julia checkbox.
+
+Q: After some Julia exploration can I return to previous drawing quickly?.
+A: Press Ctrl+Z till the right image appears.
+
+Q: I cannot make avi with animator because there are problems with codec.
+A: First of all try with standard resolution (640x480) and simple codec (RLE encoded). Some codec doesn't work with some resolutions, and some codec doesn't work at all! Since version 2.8.1 you can try different codec on the same animation.
